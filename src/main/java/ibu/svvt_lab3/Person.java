@@ -1,4 +1,4 @@
-package ibu.svvt_lab2;
+package ibu.svvt_lab3;
 
 public class Person {
 	int age;

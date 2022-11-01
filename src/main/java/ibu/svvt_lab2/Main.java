@@ -1,4 +1,4 @@
-package ibu.svvt_lab1;
+package ibu.svvt_lab2;
 
 import java.util.Arrays;
 

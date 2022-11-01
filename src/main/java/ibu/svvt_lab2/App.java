@@ -1,4 +1,4 @@
-package ibu.svvt_lab1;
+package ibu.svvt_lab2;
 
 public class App {
   public static void main(String[] args) {
