@@ -34,6 +34,16 @@ public class DB {
         return db.size();
     }
     
+    public boolean dummy(int a) {
+    	if (a > 10) {
+    		System.out.println("Hi");
+    		return true;
+    	} else {
+    		System.out.println("Bye");
+    		return false;
+    	}
+    }
+    
     /**
      * Remove from DB.
      */

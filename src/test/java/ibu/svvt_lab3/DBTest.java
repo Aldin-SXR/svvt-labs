@@ -55,7 +55,7 @@ class DBTest {
 	@Order(1)
 	@Disabled
 	void testCount() {
-		assertEquals(2, database.count());
+	//	assertEquals(2, database.count());
 	}
 	
 	@Test
@@ -63,14 +63,14 @@ class DBTest {
 	@EnabledOnOs({OS.MAC, OS.WINDOWS})
 	void testClear() {
 		database.clear();
-		assertEquals(0, database.count());
+	//	assertEquals(0, database.count());
 	}
 	
 	@Test
 	@Order(4)
 	void testInsert() {
 		database.insert("Java");
-		assertEquals(3, database.count());
+	//	assertEquals(3, database.count());
 		assertEquals("Java", database.get(2));
 	}
 	
@@ -89,5 +89,15 @@ class DBTest {
 		} catch (Exception e) {
 			assertEquals(IndexOutOfBoundsException.class, e.getClass());
 		}
+	}
+	
+	@Test
+	void testDummy() {
+		assertTrue(database.dummy(20));
+	}
+	
+	@Test
+	void testDummy2() {
+		assertTrue(database.dummy(0));
 	}
 }
